@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 175px;
+    margin: 20px auto;
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    background-color: #0095f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.separator span {
+    padding: 0 10px;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.facebook-login a {
+    text-decoration: none;
+    color: #385185;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.forgot-pass {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.forgot-pass a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+.register-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-box p {
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.register-box a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.get-app {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.get-app p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.get-app img {
+    width: 136px;
+    height: auto;
+    margin: 5px;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #8e8e8e;
+    font-size: 12px;
+    text-align: center;
+ /*     flex-direction: column;Changed to column to put copyright below */
+}
+
+.footer-links a {
+    
+ 
+    color: #8e8e8e;
+    text-decoration: none;
+    margin: 0 10px 10px 0;
+}
+
+
+.copyright {
+    margin-top: 10px;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 20px;
+    }
+
+    .login-box,
+    .register-box,
+    .get-app {
+        width: 100%;
+        border: 1px solid #dbdbdb;
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        font-size: 10px;
+        padding: 10px;
+        flex-direction: column; /* Ensure column layout on mobile too */
+    }
+
+    .footer-links a {
+        margin: 5px;
+    }
+
+    .copyright {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
